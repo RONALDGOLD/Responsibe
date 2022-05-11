@@ -1,0 +1,88 @@
+.boton {
+  background:green;
+  color: white;
+}
+.caja3, .caja4 , .caja5 {
+ width: 30%;
+ float: left;
+ border: 2px solid red;
+ height: 400px;
+}
+.caja3{
+	background: silver;
+}
+.caja4 {
+	background: yellow;
+}
+.caja5{
+	background: purple;
+}
+
+.caja1, .caja2 {
+ width: 45%;
+ float: left;
+ border: 2px solid red;
+ height: 400px;
+}
+
+@media (max-width: 1000px) {
+	.boton{
+		background: blue;
+	}
+}
+.caja1{background: blue;}
+.caja2{background: orange;}
+
+
+@media (max-width: 500px) {
+	.boton{
+		background: orange;
+	}
+
+	.caja1,.caja2,.caja3,.caja4,.caja5{
+		width: 100%;
+	}
+	.boton{
+		display: none;
+	}
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+	.boton{
+		background: lightskyblue;
+	}
+}
+
+.titulo {
+	color: blue;
+	font-size: 40px;
+}
+
+
+@media(max-width: 1000px){
+	.titulo{
+		color: green;
+		text-shadow: 0 0 25px rgb(0,0,0,0.8);
+	}
+}
+@media(max-width: 800px) and (min-width: 500px){
+	.titulo{
+		color: orange;
+		text-shadow: none;
+	}
+}
+@media(max-width: 500px){
+	.titulo{
+		color: red;
+		font-size: 20px;
+	}
+}
+@media print {
+	.titulo{
+		font-size: 140px;
+	}
+	.boton{
+		display: none;
+	}
+}
+ 
